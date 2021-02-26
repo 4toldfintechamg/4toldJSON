@@ -1,0 +1,66 @@
+###
+POST http://localhost:8000/api/contacts
+Content-Type: application/json
+
+{
+  "name": "Alvaro Medina",
+  "gender": "Male",
+  "email": "armedinag@gmail.com",
+  "phone": 945454554
+}
+
+###
+POST http://localhost:8000/api/contacts
+Content-Type: application/json
+
+{
+  "name": "Adriana Medina",
+  "gender": "Female",
+  "email": "adrianag@gmail.com",
+  "phone": 9999999
+}
+
+###
+GET http://localhost:8000/api/contacts
+Accept: application/json
+
+###
+GET http://localhost:8000/api/contacts/60352b5c29d3ae049c8f4c99
+Accept: application/json
+
+###
+PUT http://localhost:8000/api/contacts/60352b5c29d3ae049c8f4c99
+Content-Type: application/json
+
+{
+ "email": "armedinag@gmail.com",
+ "phone": 977415437
+}
+
+
+###
+GET http://localhost:8000/api/entities
+Accept: application/json
+
+###
+GET http://localhost:8000/api/entities/6009d44052811aeae269d362
+Accept: application/json
+
+
+###
+PUT http://localhost:8000/api/entities/6009d44052811aeae269d362
+Content-Type: application/json
+
+{
+  "email": "armedinag@gmail.com"
+
+}
+
+###
+GET http://localhost:8000/api/schemas
+Accept: application/json
+
+
+###
+GET http://localhost:8000/api/schemas/60353e2dc84c0e802fdacaed
+Accept: application/json
